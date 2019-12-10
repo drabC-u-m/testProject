@@ -14,4 +14,7 @@
 		select * from user 
 	</select>
 	
+	<delete id="deleteOne">
+		delete from user where id=#{id}
+	</delete>
 </mapper>

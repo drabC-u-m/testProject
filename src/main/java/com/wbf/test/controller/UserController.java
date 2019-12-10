@@ -30,4 +30,12 @@ public class UserController {
 		mod.addObject(user);
 		return mod;
 	}
+	
+	@RequestMapping("deleteOne")
+	public ModelAndView deleteOne(HttpServletRequest request , HttpServletResponse response,int id){
+		logger.info("user/delete");
+		userService.deleteOne(id);
+		ModelAndView mod = new ModelAndView("user");
+		return mod;
+	}
 }

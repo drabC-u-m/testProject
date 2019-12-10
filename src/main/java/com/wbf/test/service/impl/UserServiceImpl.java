@@ -18,5 +18,10 @@ public class UserServiceImpl implements UserService{
 	public User selectAll() {
 		return userMapper.selectAll();
 	}
+
+	@Override
+	public void deleteOne(int id) {
+		userMapper.deleteOne(id);
+	}
 	
 }
