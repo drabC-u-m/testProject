@@ -325,7 +325,7 @@
 	<!-- 构建相关的配置 -->
 	<build>
 		<!-- 打包之后的名称 -->
-		<finalName>vv</finalName>
+		<finalName>testProject</finalName>
 		<!-- 资源路径列表 -->
 		<resources>
 			<resource>
@@ -344,10 +344,6 @@
 				<directory>src/main/resources</directory>
 				<includes>
 					<include>database-test.xml</include>
-<!-- 					<include>database-baidumvslave.xml</include> -->
-<!-- 					<include>database-baidumvstat.xml</include> -->
-<!-- 					<include>redis.xml</include> -->
-<!-- 					<include>redis.properties</include> -->
 					<include>logback.xml</include>
 				</includes>
 				<!-- 是否开启使用系统属性或者项目属性的值替换资源文件 -->
